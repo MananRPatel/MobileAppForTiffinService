@@ -1,6 +1,6 @@
 ### Mobile App for Tiffin service.
 <p align="center">
-  <img width="460" height="300" src="https://drive.google.com/file/d/19zfs17llvZR8PDycC7bP1aXftU_68smn/view?usp=sharing">
+  <img width="460" height="300" alt="project image" src="https://drive.google.com/file/d/19zfs17llvZR8PDycC7bP1aXftU_68smn/view">
 </p>
 This is our Project video : https://drive.google.com/file/d/1pXEellANDUa4iLtr-BfgWFORMQDKr320/view?usp=sharing
 
