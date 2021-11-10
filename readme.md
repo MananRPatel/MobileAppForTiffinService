@@ -1,6 +1,6 @@
 ### Mobile App for Tiffin service.
 
-Full App code is no publish.
+Full App code is no publish here.
 <p align="center">
   <img width="250" height="auto" src="https://github.com/MananRPatel/MobileAppForTiffinService/blob/74b1f904b15d2fba4d887c2656f688475a74fcb8/Annadata-poster.png">
 </p>
