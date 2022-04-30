@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Annadata</string>
+    <string name="welcome_app">Welcome to our application</string>
+    <string name="food_name">Food Name</string>
+    <string name="food_weight">Food Weight</string>
+    <string name="food_price">Food Value</string>
+    <string name="food_time">Food Time</string>
+    <string name="sell">Sell</string>
+    <string name="donate">Donate</string>
+    <string name="submit">Submit</string>
+    <string name="conform">Confirm</string>
+    <string name="delivery">Delivery</string>
+    <string name="num_of_food_order">Num of Food Order</string>
+    <string name="TextView">TextView</string>
+    <string name="dsec" />
+    <string name="profile">Profile</string>
+    <string name="expand">expand all</string>
+    <string name="buyer">Buyer</string>
+    <string name="uname">User Name</string>
+    <string name="txtv">textview</string>
+    <string name="or">Enter Number of Order</string>
+    <string name="addf">Enter Address To Deliver Food</string>
+    <string name="fsell">Food\nSell</string>
+    <string name="fdonate">Food Donate</string>
+    <string name="finfo">Food Information</string>
+    <string name="fdate">Food Date</string>
+    <string name="wait_a_second">wait a second</string>
+    <string name="todo">TODO</string>
+    <string name="scheduler">scheduler</string>
+    <string name="enter_city_name">Enter City Name</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

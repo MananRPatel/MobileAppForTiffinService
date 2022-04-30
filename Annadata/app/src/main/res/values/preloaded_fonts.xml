@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/adamina</item>
+        <item>@font/almendra_bold</item>
+        <item>@font/antic</item>
+        <item>@font/baloo</item>
+        <item>@font/baumans</item>
+        <item>@font/cantata_one</item>
+        <item>@font/caudex</item>
+        <item>@font/coustard</item>
+        <item>@font/montserrat</item>
+        <item>@font/montserrat_alternates</item>
+        <item>@font/montserrat_bold</item>
+        <item>@font/playfair_display</item>
+        <item>@font/roboto_medium</item>
+        <item>@font/titillium_web</item>
+    </array>
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clipToPadding="false"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    android:focusable="true"
+    app:cardCornerRadius="14dp"
+    app:cardPreventCornerOverlap="false">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/card_fs_foodphoto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/apple1"
+        android:elevation="2dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:elevation="1dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".9"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/card_fs_sharelink"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/act__sharelink"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@null"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_fs_extend"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="8dp"
+            android:animateLayoutChanges="true"
+            android:background="#FFE3ED"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/dsec"
+                android:src="@drawable/patten1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/card_fs_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="@string/TextView"
+                android:textColor="#BD431C"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.206"
+                app:layout_constraintHorizontal_bias="0.1"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/card_fs_foodleft"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:fontFamily="@font/baumans"-->
+<!--                android:text="@string/TextView"-->
+<!--                android:textAlignment="viewEnd"-->
+<!--                android:textColor="#AF0000"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/card_fs_fooddate"-->
+<!--                app:layout_constraintVertical_bias="0.0"-->
+<!--                tools:ignore="NotSibling" />-->
+
+            <TextView
+                android:id="@+id/card_fs_fooddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="@string/TextView"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.809" />
+
+            <TextView
+                android:id="@+id/card_fs_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/titillium_web"
+                android:text="@string/TextView"
+                android:textColor="#9E640F"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_fs_time"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/card_fs_foodinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="TextView"
+                android:fontFamily="@font/roboto_condensed_regular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.101"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_fs_time"
+                app:layout_constraintVertical_bias="0.0" />
+            <!--                app:layout_constraintEnd_toStartOf="@+id/card_fs_foodleft"-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/card_fs_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:text="@string/txtv"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/card_fs_foodleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="10dp"
+            android:text="@string/TextView"
+            android:textAlignment="viewEnd"
+            android:textColor="#AF0000"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/card_fs_food"
+            app:layout_constraintTop_toBottomOf="@+id/card_fs_food"
+            app:layout_constraintVertical_bias="0"
+            tools:ignore="NotSibling" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/gradiant2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_fs_foodleft"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/card_fs_value"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/TextView"
+                android:textAlignment="center"
+                android:textColor="#117168"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

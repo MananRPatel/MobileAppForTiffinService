@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dial_cp_userpic"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/profilepic_bg"
+        android:elevation="10dp"
+        android:src="@drawable/user_image"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_centerVertical="true"
+        android:elevation="10dp"
+        android:src="@drawable/profilepic_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="#D6F3FF"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/dial_change_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/background_submit_button"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ai_cameraicon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/dial_change_photo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/dial_change_photo"
+                app:layout_constraintTop_toTopOf="@+id/dial_change_photo"
+                app:layout_constraintVertical_bias="0.55"
+                tools:ignore="MissingConstraints,NotSibling">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dial_cp_username"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Enter New Name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:padding="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/dial_cp_sign_map"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/background_submit_button"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/act_sign_placeholder"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dial_change_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:id="@+id/dial_cp_cityname"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginEnd="16dp"
+                android:text="City Name"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/dial_cp_sign_map"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/dial_cp_sign_map"
+                app:layout_constraintTop_toTopOf="@+id/dial_cp_sign_map"
+                app:layout_constraintVertical_bias="0.55" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dial_cp_sign_map"
+                tools:ignore="MissingConstraints">
+
+                <fragment
+                    android:id="@+id/dial_cp_google_map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:weightSum="2"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <Button
+                    android:id="@+id/dial_cp_close"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/cancel_order"
+                    android:fontFamily="@font/roboto_slab"
+                    android:text="@string/close"
+                    android:textColor="@color/whiteTextColor"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dial_cp_submit"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/background_submit_button"
+                    android:fontFamily="@font/roboto_slab"
+                    android:text="@string/submit"
+                    android:textColor="@color/whiteTextColor"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

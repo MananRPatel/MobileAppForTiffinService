@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f4c7ce"
+    android:orientation="vertical"
+    tools:context=".activitys.FoodDelivery">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="14dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:src="@drawable/arrow_back" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="-11dp"
+            android:elevation="2dp"
+            android:src="@drawable/cloud"
+            android:contentDescription="@string/dsec">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/fooddelivery"
+            android:contentDescription="@string/dsec" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="-11dp"
+            android:elevation="2dp"
+            android:src="@drawable/cloud"
+            android:contentDescription="@string/dsec" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:elevation="2dp"
+            android:src="@drawable/cloud"
+            android:contentDescription="@string/dsec">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/shop"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70dp"
+            android:src="@drawable/deliveryman"
+            android:contentDescription="@string/dsec" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/shop"
+            android:elevation="2dp"
+            android:src="@drawable/cloud"
+            android:contentDescription="@string/dsec">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcycle_fd_deliverycycle"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:elevation="5dp"
+        android:translationZ="5dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginEnd="2dp" />
+
+</LinearLayout>
