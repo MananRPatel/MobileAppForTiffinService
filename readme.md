@@ -33,4 +33,17 @@ How tiffin selling detailing need to fill.
 
 Below Screenshot is when seller need to advertise their tiffin. we provide the banner with attaching QR code and [short link](https://annadata.page.link/oxJHSGwTd4jDxMT9A) which help user to reach seller's specific tiffin.
 
+[Video](https://drive.google.com/file/d/1pcrr-Zn-2msPYLjHiq6BwEYtoepwKpfg/view?usp=sharing)
+This Video is show the Latest features like QR codes , link sharing, use google map location instead of normal address, Tiffin feedback, Tiffin modifications etc.
+
+[Video](https://drive.google.com/file/d/1zKUzudT28-_yGi-kS07y-X8gzrGRUaYR/view?usp=sharing)
+This Video is show the features like notifications tiffin schedule, nofity the user and sellers when tiffin is delivered, order accepted or rejected.
+
+[Presentation](https://bit.ly/annadata-presentation)
+Here is presentation of application which understand the project purpose easily.
+
+[blog](https://19it103manan19it098hirak.blogspot.com/2021/03/mobileappfortiffinservice.html)
+Here blog of Project to understanding usage,features of project
+
+
 ### Here i didn't have upload the code because currently i am working on this project with adding new features so after finishing the project i will upload full project here but currently add some project files which help to understand the project, android fundamentals and fetching data from APIs.
