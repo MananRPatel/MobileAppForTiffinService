@@ -38,6 +38,20 @@
         app:layout_constraintWidth_percent=".9"
         tools:ignore="MissingConstraints">
 
+
+        <ImageView
+            android:id="@+id/nonvegveg2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="-5dp"
+            android:layout_weight="2"
+            android:contentDescription="@string/vegNonVeg"
+            android:src="@drawable/veg_symbol"
+            app:layout_constraintBottom_toTopOf="@+id/card_fs_extend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_fs_sharelink" />
+
         <ImageButton
             android:id="@+id/card_fs_sharelink"
             android:layout_width="wrap_content"
@@ -94,21 +108,21 @@
                 app:layout_constraintVertical_bias="0.206"
                 app:layout_constraintHorizontal_bias="0.1"/>
 
-<!--            <TextView-->
-<!--                android:id="@+id/card_fs_foodleft"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginEnd="16dp"-->
-<!--                android:fontFamily="@font/baumans"-->
-<!--                android:text="@string/TextView"-->
-<!--                android:textAlignment="viewEnd"-->
-<!--                android:textColor="#AF0000"-->
-<!--                android:textSize="12sp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/card_fs_fooddate"-->
-<!--                app:layout_constraintVertical_bias="0.0"-->
-<!--                tools:ignore="NotSibling" />-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/card_fs_foodleft"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginEnd="16dp"-->
+            <!--                android:fontFamily="@font/baumans"-->
+            <!--                android:text="@string/TextView"-->
+            <!--                android:textAlignment="viewEnd"-->
+            <!--                android:textColor="#AF0000"-->
+            <!--                android:textSize="12sp"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/card_fs_fooddate"-->
+            <!--                app:layout_constraintVertical_bias="0.0"-->
+            <!--                tools:ignore="NotSibling" />-->
 
             <TextView
                 android:id="@+id/card_fs_fooddate"

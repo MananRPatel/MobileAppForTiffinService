@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ECF4F1"
+    android:background="#F2E787"
     android:id="@+id/act_dc_scroll"
     tools:context=".activitys.TiffinModify">
 
@@ -12,7 +12,8 @@
     <!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout7" />-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
 
 
         <ImageButton
@@ -20,15 +21,17 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_margin="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="64dp"
+            android:adjustViewBounds="true"
             android:background="@null"
             android:elevation="15dp"
-            android:layout_marginTop="4dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            app:layout_constraintStart_toStartOf="parent"
             android:src="@drawable/act_review_avg_review"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout9" />
+            app:layout_constraintBottom_toBottomOf="@+id/act_tm_layout_rating"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/act_tm_layout_rating"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
 
         <ImageView
             android:id="@+id/act_tm_foodphoto"
@@ -80,8 +83,10 @@
                 android:id="@+id/act_tm_foodname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 android:fontFamily="@font/montserrat"
                 android:text="@string/TextView"
                 android:textColor="#B5000000"
@@ -114,6 +119,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_margin="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 android:fontFamily="@font/montserrat"
                 android:text="@string/TextView"
                 android:textAlignment="viewEnd"
@@ -170,12 +179,13 @@
             android:id="@+id/constraintLayout7"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginEnd="52dp"
             android:background="@drawable/confirm_bg3"
             android:elevation="10dp"
             android:outlineAmbientShadowColor="#4CAF50"
             android:outlineSpotShadowColor="#4CAF50"
             android:translationY="-30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/constraintLayout8"
             app:layout_constraintWidth_percent=".28"
@@ -201,21 +211,20 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/act_tm_layout_rating"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/confirm_bg2"
             android:elevation="5dp"
             android:outlineAmbientShadowColor="#FFF"
             android:outlineSpotShadowColor="#000"
             android:translationY="-30dp"
-            app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.11"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/constraintLayout9"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8"
             app:layout_constraintWidth_percent=".5"
             tools:ignore="MissingConstraints">
 
@@ -241,10 +250,10 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout8"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/confirm_bg4"
             android:elevation="7dp"
-            android:layout_marginTop="35dp"
             android:outlineAmbientShadowColor="#E91E63"
             android:outlineSpotShadowColor="#E91E63"
             android:translationY="-30dp"
@@ -273,18 +282,17 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout9"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@drawable/confirm_bg5"
+            android:background="#B7E483"
             android:elevation="7dp"
             android:outlineAmbientShadowColor="#673AB7"
             android:outlineSpotShadowColor="#673AB7"
             android:translationY="-30dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.381"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout8"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/act_tm_layout_rating"
             app:layout_constraintWidth_percent=".35"
             tools:ignore="MissingConstraints">
 
@@ -292,10 +300,14 @@
                 android:id="@+id/act_tm_totalorder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/roboto_condensed_regular"
                 android:text="@string/TextView"
-                android:textColor="#D500F9"
-                android:textSize="15sp"
+                android:textColor="#198E1D"
+                android:textSize="35sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -305,17 +317,27 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
-            android:layout_width="180dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            app:boxStrokeColor="@color/appFont"
+            app:boxStrokeErrorColor="@color/danger"
+            app:boxStrokeWidth="3dp"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/dark_green"
+            app:hintTextColor="@color/conform_blue"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.058"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/act_tm_ratingreview">
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout9">
 
-            <androidx.appcompat.widget.AppCompatEditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/act_tm_neworder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -323,13 +345,15 @@
                 android:inputType="numberSigned"
                 android:textSize="17dp" />
 
+
         </com.google.android.material.textfield.TextInputLayout>
+
 
         <Button
             android:id="@+id/act_tm_set_order"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/background_submit_button"
+            android:background="@drawable/conform_button_background"
             android:elevation="6dp"
             android:fontFamily="@font/montserrat"
             android:shadowColor="#F44336"
@@ -342,9 +366,11 @@
             app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textInputLayout"
-            app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout"
+            app:layout_constraintVertical_bias="0.51" />
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
@@ -359,7 +385,7 @@
                 android:id="@+id/act_tm_conform"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/background_submit_button"
+                android:background="@drawable/conform_button_background"
                 android:elevation="6dp"
                 android:fontFamily="@font/montserrat"
                 android:shadowColor="#F44336"
@@ -390,7 +416,7 @@
                 android:shadowColor="#F44336"
                 android:shadowDx="0"
                 android:shadowDy="100"
-                android:text="Not Accepting Order"
+                android:text="Stop Accepting Order"
                 android:textColor="@color/whiteTextColor"
                 android:textStyle="bold"
                 android:translationZ="2dp"

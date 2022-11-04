@@ -29,7 +29,75 @@
     <string name="scheduler">scheduler</string>
     <string name="enter_city_name">Enter City Name</string>
     <string name="close">Close</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="frameDes">This is contain Splash screen frame</string>
+    <string name="appLogoDes">This is official image of Annadata App logo</string>
+    <string name="appWelcome">Welcome to Annadata</string>
+    <string name="appDes">Please provide your phone No. for Sign-In/Sign-Up Account</string>
+    <string name="lady_cooking">Lady cooking image</string>
+    <string name="enterPhoneNo">Enter Phone Number</string>
+
+    <string name="required">required</string>
+    <string name="addOTP">please add your OTP for verify the account</string>
+    <string name="name">Enter your name</string>
+    <string name="birthdate">Enter your birthdate</string>
+   <string name="buildNo">Building No.</string>
+    <string name="societyName">Enter society name</string>
+    <string name="nearBY">Near by / Opp. of</string>
+    <string name="imageCapture">Click for Capturing Photo</string>
+    <string name="selectDatePicker">Click for Add BirthDate</string>
+    <string name="userProfilePicDes">User Profile Picture</string>
+
+    <string name="mainAppDes">this images are use for MainActivity</string>
+    <string name="seller">Seller</string>
+    <string name="hi">Hi,</string>
+    <string name="seller_section">Seller Section</string>
+    <string name="tiffin_name">Enter tiffin name</string>
+    <string name="tiffin_weight">Tiffin weight (Gram)</string>
+    <string name="tiffin_order">Total order</string>
+    <string name="tiffin_contain">Enter tiffin items</string>
+    <string name="tiffin_des">Enter tiffin description</string>
+    <string name="tiffin_price">Enter tiffin price</string>
+    <string name="veg">Veg</string>
+    <string name="non_veg">Non-Veg</string>
+    <string name="tiffin_start_time_button">Order Accepting Time</string>
+    <string name="tiffin_end_time_button">Until Accepting Order</string>
+    <string name="tiffin_schedule_button">Add days for tiffin Schedule</string>
+    <string name="tiffin_accepting_time">Order accepting time start from XX:XX :XX to YY:YY :YY</string>
+    <string name="tiffin_schedule">Tiffin Schedule</string>
+    <string name="schedule_on">ON</string>
+    <string name="schedule_off">OFF</string>
+    <string name="tiffin_image">Tiffin Image</string>
+    <string name="currentOrder">1</string>
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+    <string name="vegNonVeg">Show about tiffin contain veg or Non veg</string>
+    <string name="checkout">CheckOut</string>
+    <string name="add_instructions">Add Special Instructions</string>
+    <string name="add_order_time">Add order Time</string>
+    <string name="add_order_schedule_date">Schedule Order</string>
+    <string name="two_distance">show image of map with two distance</string>
+    <string name="check_out_tiffin">Check out tiffin</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="seller_location_to_buyer_location">Seller location to Buyer Location</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+    <string name="online_payment">Online Payment</string>
+    <string name="please_wait">Please wait</string>
+    <string name="EnterPromoCode">Enter Coupon Code</string>
+    <string name="apply">APPLY</string>
+    <string name="tiffins">Tiffins</string>
+    <string name="store_open">Store Open</string>
+    <string name="tiffin_link">Tiffin Link</string>
+    <string name="store_place">Store Place: </string>
+    <string name="conform_instructions">conform Special instructions</string>
+    <string name="tiffin">Tiffin</string>
+    <string name="fee">Tiffin Price</string>
+    <string name="total">Total</string>
+    <string name="x">X</string>
+    <string name="discount">Discount</string>
+    <string name="my_account">My Account</string>
+    <string name="send_store_link"><u>send store link</u></string>
+    <string name="send_banner_link"><u>send banner link</u></string>
+    <string name="go_to_lists">Go to Lists</string>
 
 </resources>

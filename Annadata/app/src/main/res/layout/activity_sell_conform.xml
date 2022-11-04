@@ -8,520 +8,840 @@
     android:orientation="vertical"
     tools:context=".activitys.SellConform">
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        tools:context=".fragments.OrderConformFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <FrameLayout
+            <ImageView
+                android:id="@+id/act_s_c_foodphoto"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="230dp"
+                android:background="@color/light_lemon"
+                android:contentDescription="@string/tiffin_image"
+                android:elevation="35dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/loading_image" />
 
-
-                <ImageView
-                    android:id="@+id/act_s_c_foodphoto"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:contentDescription="@string/todo"
-                    android:scaleType="centerCrop"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0"
-                    app:srcCompat="@drawable/apple1" />
-
-                <ImageView
-                    android:id="@+id/act_sc_back_button"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:padding="15dp"
-                    android:focusable="true"
-                    android:foreground="?attr/selectableItemBackground"
-                    android:src="@drawable/arrow_back" />
-            </FrameLayout>
-
-            <View
-                android:id="@+id/view"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#000"
-                app:layout_constraintBottom_toBottomOf="@+id/act_s_c_foodphoto"
-                tools:ignore="MissingConstraints" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/confirm_bg"
-        android:elevation="15dp"
-        android:outlineAmbientShadowColor="#00BCD4"
-        android:outlineSpotShadowColor="#00BCD4"
-        android:translationY="-30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/act_s_c_foodphoto"
-        app:layout_constraintVertical_bias="0"
-        app:layout_constraintWidth_percent=".8"
-        tools:ignore="MissingConstraints">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="-5dp"
+                android:background="@drawable/order_conform_card_background"
+                android:elevation="35dp"
+                android:outlineAmbientShadowColor="@color/dark_green"
+                android:outlineSpotShadowColor="@color/dark_green"
+                tools:targetApi="p">
 
                 <TextView
                     android:id="@+id/scfoodname"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60sp"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="15dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/TextView"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/copse_regular"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    tools:text="Gujarati Thaali"
+                    android:textColor="@color/dark_red"
+                    android:textSize="25sp"
                     android:textStyle="bold"
-                    android:textColor="#B5000000"
-                    android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|left"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/scfooddate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/TextView"
-                    android:textColor="@android:color/primary_text_light"
-                    android:textSize="14sp"
-                    tools:ignore="SmallSp" />
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
                     android:id="@+id/scfoodvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/copse_regular"
+                    android:gravity="center"
+                    android:text="@string/please_wait"
+                    android:textColor="@color/orange"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/scfoodname"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="₹500" />
+
+                <View
+                    android:id="@+id/view2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="25dp"
-                    android:fontFamily="@font/montserrat"
-                    android:gravity="end"
-                    android:text="@string/TextView"
-                    android:textColor="#8C0DA1"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
-            <View
-                android:id="@+id/line"
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="20dp"
-                android:background="#000"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias=".5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/scfoodvalue"
-                app:layout_constraintVertical_bias="0"
-                app:layout_constraintWidth_percent=".9" />
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/clock_icon"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/clock_icon" />
-
-
-                <TextView
-                    android:id="@+id/scfoodtime"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="13dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/TextView"
-                    android:textColor="#166A8F"
-                    android:textSize="14sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/weight_icon"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:src="@drawable/weight_icon" />
-
-
-                <TextView
-                    android:id="@+id/scfoodweight"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="13dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/TextView"
-                    android:textColor="#664998"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/price_icon"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:contentDescription="@string/todo"
-                    android:src="@drawable/oder_icon" />
-
-                <TextView
-                    android:id="@+id/scfoodleft"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="13dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/TextView"
-                    android:textColor="#CF2F0B"
-                    android:textSize="14sp" />
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="4dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
-        tools:ignore="MissingConstraints">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/act_sc_location"
-                    android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:layout_margin="10dp"
-                    android:adjustViewBounds="true"
-                    android:background="@drawable/background_submit_button"
-                    android:padding="5dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/act_sign_placeholder"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/mid_light_grey"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageButton
-                    android:id="@+id/act_sc_sharetiffinlink"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="50dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
-                    android:padding="5dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/act__sharelink"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="24dp"
-                tools:ignore="MissingConstraints,NotSibling">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/scnumberoforder"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/primaryTextColor"
-                    android:fontFamily="@font/montserrat"
-                    android:hint="@string/or"
-                    android:inputType="textPersonName"
-                    android:maxLines="1"
-                    android:padding="12dp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_gravity="center"-->
-            <!--                android:layout_marginTop="20dp"-->
-            <!--                android:background="@drawable/shape_aed_red"-->
-            <!--                android:orientation="horizontal"-->
-            <!--                android:padding="10dp">-->
-
-            <!--                <Button-->
-            <!--                    android:id="@+id/scordertime"-->
-            <!--                    android:layout_width="wrap_content"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:layout_gravity="center"-->
-            <!--                    android:fontFamily="@font/baumans"-->
-            <!--                    android:paddingStart="10dp"-->
-            <!--                    android:background="#00000000"-->
-            <!--                    android:paddingEnd="10dp"-->
-            <!--                    android:text="@string/otime"-->
-            <!--                    android:textColor="@color/whiteCardColor"-->
-            <!--                    android:textSize="16sp"-->
-            <!--                    android:textStyle="bold" />-->
-
-            <!--                <ImageView-->
-            <!--                    android:layout_width="25dp"-->
-            <!--                    android:layout_height="25dp"-->
-            <!--                    android:padding="3dp"-->
-            <!--                    android:src="@drawable/calendar" />-->
-
-
-            <!--            </LinearLayout>-->
-
-
-            <LinearLayout
-                android:id="@+id/act_f_s_timedateb"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                    app:layout_constraintTop_toBottomOf="@+id/scfoodname" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2">
 
-                    android:background="@drawable/shape_aed_red"
+                    <ImageView
+                        android:id="@+id/nonvegveg"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:contentDescription="@string/vegNonVeg"
+                        android:src="@drawable/veg_symbol" />
+
+                    <TextView
+                        android:id="@+id/scfoodweight"
+                        android:layout_width="0dp"
+                        android:layout_height="50sp"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/fredoka_one_regular"
+                        android:gravity="center"
+                        android:text="@string/please_wait"
+                        android:textColor="@color/dark_blue_1"
+                        android:textSize="19sp"
+                        tools:text="500 grams" />
+
+
+                    <ImageView
+                        android:id="@+id/act_sc_sharetiffinlink"
+                        android:layout_width="0dp"
+                        android:layout_height="25sp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:contentDescription="@string/tiffin_link"
+                        android:src="@drawable/share_tiffin_link" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/mid_light_grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+                <TextView
+                    android:id="@+id/scdescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/copse_regular"
+                    android:gravity="center_vertical|start"
+                    android:justificationMode="inter_word"
+                    android:text="@string/tiffin_des"
+                    android:textColor="@color/dark_green"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view3"
+                    tools:text="This tiffin contains 1 Batata Sabji, 1 Punjabi Sabji, 5 Butter Roti, 1 Masala Chaas, 1 Daal Rice" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="17dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/scdescription">
+
+
+                    <TextView
+                        android:id="@+id/scfoodleft"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/fredoka_one_regular"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/please_wait"
+                        android:textColor="@color/dark_yellow"
+                        android:textSize="25sp"
+                        tools:text="100 Orders left" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
                     android:orientation="horizontal"
-                    android:padding="10dp">
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
                     <Button
                         android:id="@+id/scordertime"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@null"
-                        android:focusable="true"
+                        android:layout_width="0dp"
+                        android:layout_height="55sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/add_instruction_background"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="@string/add_order_time"
+                        android:textColor="@color/orange_1"
+                        android:textSize="14sp"
+                        style="?android:attr/buttonBarButtonStyle" />
 
-                        android:fontFamily="@font/montserrat"
-                        android:paddingStart="20dp"
-                        android:text="Order Time"
-                        android:textColor="@color/whiteCardColor"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
 
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:padding="3dp"
-                        android:src="@drawable/timeclock" />
+                    <Button
+                        android:id="@+id/act_sc_location"
+                        android:layout_width="0dp"
+                        android:layout_height="55sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/add_instruction_background"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Add Location"
+                        android:textColor="@color/orange_1"
+                        android:textSize="14sp"
+                        style="?android:attr/buttonBarButtonStyle" />
+
+
                 </LinearLayout>
 
 
-            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/increment_decrement_background"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/scminus"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="-2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/fredoka_one_regular"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:text="@string/decrement"
+                            android:textColor="@color/danger"
+                            android:textSize="45sp" />
+
+                        <TextView
+                            android:id="@+id/scorder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/fredoka_one_regular"
+                            android:gravity="center"
+                            android:text="@string/currentOrder"
+                            android:textColor="@color/dark_blue_1"
+                            android:textSize="29sp" />
+
+                        <TextView
+                            android:id="@+id/scplus"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="3dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/fredoka_one_regular"
+                            android:gravity="center"
+                            android:paddingBottom="8dp"
+                            android:text="@string/increment"
+                            android:textColor="@color/green"
+                            android:textSize="45sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/scconformbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/conform_button_background"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="@string/checkout"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@id/scconformbutton"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+                        app:layout_constraintVertical_bias="0.75"
+                        tools:text="checkout     ₹5000" />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
-<!--        <EditText-->
-<!--            android:id="@+id/sccurrentaddress"-->
-<!--            android:layout_width="267dp"-->
-<!--            android:layout_height="60dp"-->
-<!--            android:ems="10"-->
-<!--            android:gravity="start|top"-->
-<!--            android:hint="@string/addf"-->
-<!--            android:inputType="textMultiLine"-->
-<!--            android:textColorHint="#4C2B51"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias=".5"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0"-->
-<!--            app:layout_constraintWidth_percent="1" />-->
 
-<!--        <EditText-->
-<!--            android:id="@+id/scnumberoforder"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:layout_marginTop="20dp"-->
-
-<!--            android:ems="9"-->
-<!--            android:hint="@string/or"-->
-<!--            android:inputType="number"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textColorHint="#2B029F"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/sccurrentaddress"-->
-<!--            app:layout_constraintVertical_bias="0" />-->
-
-
-<!--        <Button-->
-<!--            android:id="@+id/scordertime"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:background="@drawable/border_edittext"-->
-<!--            android:paddingStart="10dp"-->
-<!--            android:paddingEnd="10dp"-->
-<!--            android:text="@string/otime"-->
-<!--            android:textColor="#047BD5"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/scnumberoforder"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/scnumberoforder"-->
-<!--            app:layout_constraintVertical_bias="0" />-->
-
-<!--        <Button-->
-<!--            android:id="@+id/act_s_c__schedulebutton"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="30dp"-->
-<!--            android:layout_marginBottom="13dp"-->
-<!--            android:background="@drawable/schedule_button"-->
-<!--            android:paddingStart="10dp"-->
-<!--            android:paddingEnd="10dp"-->
-<!--            android:text="@string/scheduler"-->
-<!--            android:fontFamily="@font/adamina"-->
-<!--            android:textColor="#EF417F"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/act_s_c__schedulelayout"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="1" />-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/schedule_image"-->
-<!--            android:layout_width="50dp"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:layout_marginEnd="15dp"-->
-<!--            android:layout_marginBottom="13dp"-->
-<!--            android:src="@drawable/schedule_icon"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toStartOf="@+id/act_s_c__schedulelayout"-->
-<!--            app:layout_constraintHorizontal_bias="1"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintVertical_bias="1"-->
-<!--            android:contentDescription="@string/do" />-->
-
-<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--            android:id="@+id/act_s_c__schedulelayout"-->
-<!--            android:layout_width="60dp"-->
-<!--            android:layout_height="55dp"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:background="@drawable/round_checkbox"-->
-<!--            android:gravity="center"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.27"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintVertical_bias="1"-->
-<!--            tools:ignore="UseSwitchCompatOrMaterialXml">-->
-
-
-
-<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Button
-        android:id="@+id/scconformbutton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginRight="30dp"
-        android:background="@drawable/background_submit_button"
-        android:elevation="10dp"
-        android:fontFamily="@font/montserrat"
-        android:shadowColor="#F44336"
-        android:shadowDx="100"
-        android:shadowDy="100"
-        android:text="@string/conform"
-        android:focusable="true"
-        android:textColor="@color/whiteTextColor"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
-        app:layout_constraintVertical_bias=".2" />
-        </LinearLayout>
     </ScrollView>
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:fillViewport="true">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/act_s_c_foodphoto"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:contentDescription="@string/todo"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintVertical_bias="0"-->
+<!--                    app:srcCompat="@drawable/apple1" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/act_sc_back_button"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:focusable="true"-->
+<!--                    android:foreground="?attr/selectableItemBackground"-->
+<!--                    android:src="@drawable/arrow_back" />-->
+<!--            </FrameLayout>-->
+
+<!--            <View-->
+<!--                android:id="@+id/view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#000"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/act_s_c_foodphoto"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/constraintLayout5"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@drawable/confirm_bg"-->
+<!--        android:elevation="15dp"-->
+<!--        android:outlineAmbientShadowColor="#00BCD4"-->
+<!--        android:outlineSpotShadowColor="#00BCD4"-->
+<!--        android:translationY="-30dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/act_s_c_foodphoto"-->
+<!--        app:layout_constraintVertical_bias="0"-->
+<!--        app:layout_constraintWidth_percent=".8"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/scfoodname"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:fontFamily="@font/montserrat"-->
+<!--                    android:text="@string/TextView"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#B5000000"-->
+<!--                    android:textSize="20sp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintHorizontal_bias="0"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintVertical_bias="0" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center|left"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/scfooddate"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:fontFamily="@font/montserrat"-->
+<!--                    android:text="@string/TextView"-->
+<!--                    android:textColor="@android:color/primary_text_light"-->
+<!--                    android:textSize="14sp"-->
+<!--                    tools:ignore="SmallSp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/scfoodvalue"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginRight="25dp"-->
+<!--                    android:fontFamily="@font/montserrat"-->
+<!--                    android:gravity="end"-->
+<!--                    android:text="@string/TextView"-->
+<!--                    android:textColor="#8C0DA1"-->
+<!--                    android:textSize="14sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <View-->
+<!--                android:id="@+id/line"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0.5dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="#000"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias=".5"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/scfoodvalue"-->
+<!--                app:layout_constraintVertical_bias="0"-->
+<!--                app:layout_constraintWidth_percent=".9" />-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/clock_icon"-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:background="@drawable/clock_icon" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/scfoodtime"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="13dp"-->
+<!--                    android:fontFamily="@font/montserrat"-->
+<!--                    android:text="@string/TextView"-->
+<!--                    android:textColor="#166A8F"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/weight_icon"-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:src="@drawable/weight_icon" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/scfoodweight"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="13dp"-->
+<!--                    android:fontFamily="@font/montserrat"-->
+<!--                    android:text="@string/TextView"-->
+<!--                    android:textColor="#664998"-->
+<!--                    android:textSize="14sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/price_icon"-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:contentDescription="@string/todo"-->
+<!--                    android:src="@drawable/oder_icon" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/scfoodleft"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="13dp"-->
+<!--                    android:fontFamily="@font/montserrat"-->
+<!--                    android:text="@string/TextView"-->
+<!--                    android:textColor="#CF2F0B"-->
+<!--                    android:textSize="14sp" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/constraintLayout6"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:elevation="4dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/act_sc_location"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:background="@drawable/background_submit_button"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/act_sign_placeholder"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/act_sc_sharetiffinlink"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginBottom="50dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:background="@null"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/act__sharelink"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginEnd="24dp"-->
+<!--                tools:ignore="MissingConstraints,NotSibling">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/scnumberoforder"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/primaryTextColor"-->
+<!--                    android:fontFamily="@font/montserrat"-->
+<!--                    android:hint="@string/or"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:padding="12dp" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--            &lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:background="@drawable/shape_aed_red"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:orientation="horizontal"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:padding="10dp">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:id="@+id/scordertime"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:fontFamily="@font/baumans"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:paddingStart="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:background="#00000000"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:paddingEnd="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:text="@string/otime"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:textColor="@color/whiteCardColor"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:textSize="16sp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:textStyle="bold" />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="25dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="25dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:padding="3dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:src="@drawable/calendar" />&ndash;&gt;-->
+
+
+<!--            &lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/act_f_s_timedateb"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="10dp"-->
+
+<!--                    android:background="@drawable/shape_aed_red"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="10dp">-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/scordertime"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@null"-->
+<!--                        android:focusable="true"-->
+
+<!--                        android:fontFamily="@font/montserrat"-->
+<!--                        android:paddingStart="20dp"-->
+<!--                        android:text="Order Time"-->
+<!--                        android:textColor="@color/whiteCardColor"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="25dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:padding="3dp"-->
+<!--                        android:src="@drawable/timeclock" />-->
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--&lt;!&ndash;        <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/sccurrentaddress"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="267dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:ems="10"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="start|top"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:hint="@string/addf"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:inputType="textMultiLine"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColorHint="#4C2B51"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintHorizontal_bias=".5"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintVertical_bias="0"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintWidth_percent="1" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/scnumberoforder"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="20dp"&ndash;&gt;-->
+
+<!--&lt;!&ndash;            android:ems="9"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:hint="@string/or"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:inputType="number"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textAlignment="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColorHint="#2B029F"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintHorizontal_bias="0"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintTop_toBottomOf="@+id/sccurrentaddress"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintVertical_bias="0" />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        <Button&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/scordertime"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@drawable/border_edittext"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:paddingStart="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:paddingEnd="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="@string/otime"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="#047BD5"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintHorizontal_bias="0"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintStart_toEndOf="@+id/scnumberoforder"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintTop_toTopOf="@+id/scnumberoforder"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintVertical_bias="0" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <Button&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/act_s_c__schedulebutton"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginStart="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginBottom="13dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@drawable/schedule_button"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:paddingStart="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:paddingEnd="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="@string/scheduler"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:fontFamily="@font/adamina"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="#EF417F"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintHorizontal_bias="0"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintStart_toEndOf="@+id/act_s_c__schedulelayout"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintVertical_bias="1" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/schedule_image"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginEnd="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginBottom="13dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/schedule_icon"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintEnd_toStartOf="@+id/act_s_c__schedulelayout"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintHorizontal_bias="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintVertical_bias="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:contentDescription="@string/do" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <androidx.constraintlayout.widget.ConstraintLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/act_s_c__schedulelayout"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="55dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginBottom="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@drawable/round_checkbox"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintHorizontal_bias="0.27"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintVertical_bias="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            tools:ignore="UseSwitchCompatOrMaterialXml">&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;        </androidx.constraintlayout.widget.ConstraintLayout>&ndash;&gt;-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/scconformbutton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:background="@drawable/background_submit_button"-->
+<!--        android:elevation="10dp"-->
+<!--        android:fontFamily="@font/montserrat"-->
+<!--        android:shadowColor="#F44336"-->
+<!--        android:shadowDx="100"-->
+<!--        android:shadowDy="100"-->
+<!--        android:text="@string/conform"-->
+<!--        android:focusable="true"-->
+<!--        android:textColor="@color/whiteTextColor"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"-->
+<!--        app:layout_constraintVertical_bias=".2" />-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
 </LinearLayout>

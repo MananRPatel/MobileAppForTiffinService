@@ -11,7 +11,41 @@
     <color name="food">#f4c7ce</color>
 
     <!--gradient colors-->
-
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="appFont">#046AD5</color>
+    <color name="appSecondColor">#C06949</color>
+    <color name="light_grey">#E8E8E8</color>
+    <color name="danger">#CA0B00</color>
+    <color name="mid_light_grey">#BAAFAF</color>
+    <color name="conform_blue">#0AA1DD</color>
+    <color name="light_parrot_green">#CDF0EA</color>
+    <color name="mid_light_parrot_green">#C6DCE4</color>
+    <color name="light_skin">#FFF2F2</color>
+    <color name="conform_mid_blue">#4B7BE5</color>
+    <color name="light_yellow">#E3C4A8</color>
+    <color name="mid_blue">#34B3F1</color>
+    <color name="ocean_color">#84DFFF</color>
+    <color name="light_ocean_color">#94DAFF</color>
+    <color name="dark_green">#005555</color>
+    <color name="mid_skin">#EEB0B0</color>
+    <color name="dark_blue_1">#001E6C</color>
+    <color name="dark_red">#990000</color>
+    <color name="orange">#DF711B</color>
+    <color name="orange_1">#F9A303</color>
+    <color name="light_lemon">#ECEFB8</color>
+    <color name="mid_skin_1">#EFB8B8</color>
+    <color name="mid_yellow">#E89D4E</color>
+    <color name="green">#3EC70B</color>
+    <color name="mid_green">#66BFBF</color>
+    <color name="soil_color">#A25B5B</color>
+    <color name="dark_yellow">#CC9C75</color>
+    <color name="light_blue">#84DFFF</color>
 
     <!--login-->
 

@@ -62,7 +62,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/card_fh_foodname">
+            app:layout_constraintTop_toBottomOf="@+id/card_fh_foodname"
+            app:layout_constraintVertical_bias="1.0">
 
             <TextView
                 android:id="@+id/card_fh_foodweight"
@@ -139,6 +140,20 @@
 
 
         <TextView
+            android:id="@+id/card_fh_order_status_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Process"
+            android:textAllCaps="true"
+            android:textColor="#2196F3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/expandcard_his"
+            app:layout_constraintStart_toStartOf="@+id/card_fh_foodname" />
+
+        <TextView
             android:id="@+id/card_fh_retailer2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -180,17 +195,17 @@
             android:id="@+id/card_fh_foodname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="140dp"
             android:fontFamily="@font/montserrat"
             android:text="TextView"
             android:textAlignment="viewEnd"
             android:textColor="#AF0000"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/expandcard_his"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/card_fh_retailer"
+            app:layout_constraintTop_toBottomOf="@+id/card_fh_retailer" />
 
         <TextView
             android:id="@+id/card_fh_order_status"
