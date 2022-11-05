@@ -45,5 +45,5 @@ Here is presentation of application which understand the project purpose easily.
 [blog](https://19it103manan19it098hirak.blogspot.com/2021/03/mobileappfortiffinservice.html)
 Here blog of Project to understanding usage,features of project
 
-
-### Here i didn't have upload the code because currently i am working on this project with adding new features so after finishing the project i will upload full project here but currently add some project files which help to understand the project, android fundamentals and fetching data from APIs.
+<!-- 
+### Here i didn't have upload the code because currently i am working on this project with adding new features so after finishing the project i will upload full project here but currently add some project files which help to understand the project, android fundamentals and fetching data from APIs. -->
