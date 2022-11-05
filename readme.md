@@ -33,7 +33,7 @@ How tiffin selling detailing need to fill.
 
 Below Screenshot is when seller need to advertise their tiffin. we provide the banner with attaching QR code and [short link](https://annadata.page.link/oxJHSGwTd4jDxMT9A) which help user to reach seller's specific tiffin.
 
-[Video](https://drive.google.com/file/d/1pcrr-Zn-2msPYLjHiq6BwEYtoepwKpfg/view?usp=sharing)
+[Video](https://drive.google.com/file/d/1XUzgYhuZmi7RLg7kBA1T46Vz27q6ePVQ/view?usp=share_link)
 This Video is show the Latest features like QR codes , link sharing, use google map location instead of normal address, Tiffin feedback, Tiffin modifications etc.
 
 [Video](https://drive.google.com/file/d/1zKUzudT28-_yGi-kS07y-X8gzrGRUaYR/view?usp=sharing)
